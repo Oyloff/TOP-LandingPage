@@ -13,43 +13,58 @@
 <body>
 
   <header class="header">
-    <img src="./images/logo.png" alt="Logo">
-
-    <nav>
-      <ul>
-        <li><a href="#">Link 1</a></li>
-        <li><a href="#">Link 2</a></li>
-        <li><a href="#">Link 3</a></li>
-      </ul>
-    </nav>
-
+    <div class="container">
+      <img src="./images/logo.png" alt="Logo">
+      <nav>
+        <ul class="navigation">
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h1>This website is awesome!</h1>
-    <p>
-      Integer mattis ante in aliquam pretium. Nulla consequat enim odio, ut vestibulum eros posuere lobortis. Vivamus maximus felis vel justo dignissim, in venenatis metus faucibus. Duis ante diam, suscipit vel consectetur non, bibendum et erat. Maecenas sed dapibus mi. Cras dignissim eleifend mauris eget ullamcorper. Ut quis justo euismod, lacinia augue sit amet, ultricies nisi. Pellentesque ornare commodo viverra. Duis pretium est eget ligula posuere porttitor. Praesent facilisis mollis erat, vitae condimentum lorem. Praesent sed sollicitudin diam. Cras finibus dolor non convallis scelerisque. Aenean vitae porttitor odio.
-    </p>
-    
-    <button>Sign up</button>
-    <img src="./images/banner.png" alt="Banner">
-    <h2>Some title</h2>
-    <div class="card">
-      <img src=".images/card.png" alt="Card">
-      <p>Some info about the picture above</p>
+  <div class="hero">
+    <div class="container">
+      <div class="hero-message">
+        <h1 class="hero-main-text">This website is awesome!</h1>
+        <p class="hero-secondary-text">
+          Integer mattis ante in aliquam pretium. Nulla consequat enim odio, ut vestibulum eros posuere lobortis. Vivamus maximus felis vel justo dignissim, in venenatis metus faucibus. Duis ante diam, suscipit vel consectetur non, bibendum et erat. Maecenas sed dapibus mi. Cras dignissim eleifend mauris eget ullamcorper. Ut quis justo euismod, lacinia augue sit amet, ultricies nisi. Pellentesque ornare commodo viverra. Duis pretium est eget ligula posuere porttitor. Praesent facilisis mollis erat, vitae condimentum lorem. Praesent sed sollicitudin diam. Cras finibus dolor non convallis scelerisque. Aenean vitae porttitor odio.
+        </p>        
+        <button class="sign-up-button">Sign up</button>
+      </div>
+      <div class="hero-image">
+        <img src="./images/card.png" alt="Banner">
+      </div>
     </div>
-    <div class="card">
-      <img src=".images/card.png" alt="Card">
-      <p>Some info about the picture above</p>
+  </div>
+
+  <div class="samples">
+    <div class="container">
+      <h1 class="samples-title">Some title</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="./images/card.png" alt="Card">
+          <p class="card-description">Some info about the picture above</p>
+        </div>
+        <div class="card">
+          <img src="./images/card.png" alt="Card">
+          <p class="card-description">Some info about the picture above</p>
+        </div>
+        <div class="card">
+          <img src="./images/card.png" alt="Card">
+          <p class="card-description">Some info about the picture above</p>
+        </div>
+        <div class="card">
+          <img src="./images/card.png" alt="Card">
+          <p class="card-description">Some info about the picture above</p>
+        </div>
+      </div>
     </div>
-    <div class="card">
-      <img src=".images/card.png" alt="Card">
-      <p>Some info about the picture above</p>
-    </div>
-    <div class="card">
-      <img src=".images/card.png" alt="Card">
-      <p>Some info about the picture above</p>
-    </div>
+  </div>
+
+  <div>
     <p class="quote">
       Some thoughtful quote. Praesent facilisis mollis erat, vitae condimentum lorem. Praesent sed sollicitudin diam. Cras finibus dolor non convallis scelerisque. Aenean vitae porttitor odio.
     </p>
@@ -57,9 +72,9 @@
     <p class="calltoaction">Call to action! it's time!</p>
     <p class="message">sign up for our product!</p>
     <button>Sign up</button>
-  </main>
+  </div>
 
-  <footer>
+  <footer class="footer">
     Copyright &copy; Alexander Samoyloff 2023
   </footer>
 

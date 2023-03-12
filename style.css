@@ -1,26 +1,141 @@
-* {border: 1px solid red;}
+ /* {border: 1px solid red;} */
 
 body {
-  height: 100vh;
-  padding: 0px;
+  min-height: 100vh;
+  min-width: 640px;
+  background-color: #fff;
   font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
 }
 
-.header {
+.header,
+.hero {
   display: flex;
-  justify-content: space-between;
+  align-self: stretch;
+  justify-content: center;
+  align-items: center;
   background-color: #1f2937;
+  padding: 16px 0;
 }
 
-.header > ul {
+.container {
   display: flex;
+  flex-basis: 75%;
 }
 
-.content {
+.header > .container {
+  justify-content: space-between;
+}
+
+.navigation {
   display: flex;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  gap: 16px;
+}
+
+.hero > .container {
+  padding: 18px 0 32px 0;
+  align-items: flex-start;
+}
+
+.hero-message {
+  flex: 1;
+  padding-right: 24px;
+}
+
+.hero-image {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image > img {
+  width: 100%;
+}
+
+.hero-secondary-text,
+.navigation > li > a {
+  color: #e5e7eb;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.hero-main-text {
+  font-weight: 900;
+  font-size: 48px;
+  color: #f9faf8;
+  margin: 0px;
+  line-height: 40px;
+}
+
+.sign-up-button {
+  background-color: #3882F6;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  padding: 8px 24px;
+}
+
+.samples {
+  font-color: #1f2937;
+  width: 75%;
+}
+
+.samples > .container {
+  flex-direction: column;
+}
+
+.samples-title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin: 24px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
+  padding: 0px;
+  gap: 36px;
+  margin-bottom: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+.card > img {
+  width: 100%;
+  border: 2px solid #3882F6;
+  border-radius: 12px;
+}
+
+.card-description {
+  text-align: center;
+  font-size: 18px;
 }
 
 .footer {
-
+  display: flex;
+  align-self: stretch;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f2937;
+  padding: 32px 0;
+  color: #e5e7eb;  
+  font-size: 18px;
 }
